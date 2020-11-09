@@ -1,9 +1,0 @@
-version: 0.0.1
-files:
-  - url: notee-0.0.1.AppImage
-    sha512: IWsAkGHe60qmNruPb+fZTgS4rBM/A/lKbjhp2nxYs/Usn67vPLYsqQIOQrDsPpPecEBXFu3JrrKDZDZjcH8yuQ==
-    size: 76085935
-    blockMapSize: 80579
-path: notee-0.0.1.AppImage
-sha512: IWsAkGHe60qmNruPb+fZTgS4rBM/A/lKbjhp2nxYs/Usn67vPLYsqQIOQrDsPpPecEBXFu3JrrKDZDZjcH8yuQ==
-releaseDate: '2020-11-09T08:30:23.804Z'
