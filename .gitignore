@@ -1,5 +1,3 @@
 node_modules/
 
-dist/linux-unpacked/
-dist/*.snap
-dist/*.yaml
+dist/
