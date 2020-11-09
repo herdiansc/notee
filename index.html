@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Hello World!</title>
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+    <style type="text/css">
+body, html {
+    height: 100%;
+    display: grid;
+    background-color: #556052;
+    color: white;
+    font-size: 120%;
+    overflow: hidden;
+}
+.center-me {
+  margin: auto;
+  text-align: center;
+}
+.bottom-toolbar {
+    position: absolute;
+    bottom: 0;
+    width:100%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.btn {
+    background-color: transparent;
+    color: white;
+    padding: 7px;
+    border: 1px solid white;
+}
+[contenteditable] {
+  outline: 0px solid transparent;
+}
+    </style>
+</head>
+<body class="parent">
+    <div class="center-me" contenteditable="true" spellcheck="false">
+        Write your note here!
+    </div>
+    <div class="bottom-toolbar">
+        <button class="btn" id="fullscreen">Fullscreen</button>
+    </div>
+
+    <script type="text/javascript">
+document.getElementById("fullscreen").addEventListener("click", function() {
+    var electron = require('electron');
+    var window = electron.remote.getCurrentWindow();
+
+    if (window.isFullScreen()) {
+        window.setFullScreen(false);
+        this.innerText = 'Fullscreen';
+    } else {
+        window.setFullScreen(true);
+        this.innerText = 'Windowed';
+    }
+});
+        function fullscreenClick() {
+            var electron = require('electron');
+            var window = electron.remote.getCurrentWindow();
+            if (window.isFullScreen()) {
+                this.textContent = 'Windowed';
+            } else {
+                this.textContent = 'Fullscreen';
+            }
+            window.setFullScreen(true);
+
+        }
+    </script>
+</body>
+</html>
