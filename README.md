@@ -1,7 +1,7 @@
 # Notee: A Minimalist Desktop Note Application
 Halo this is notee, it is a minimalist desktop application created to create a simple note.
 
-![notee screenshow](https://raw.githubusercontent.com/herdiansc/notee/main/Screenshot%20from%202020-11-09%2016-52-00.png "screenshot")
+![notee screenshow](https://raw.githubusercontent.com/herdiansc/notee/main/ss.png "screenshot")
 
 ## Features
 - create simple note
