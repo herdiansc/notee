@@ -1,4 +1,5 @@
 const { app, BrowserWindow, Menu } = require('electron')
+const path = require('path')
 
 function createWindow () {
   const win = new BrowserWindow({
@@ -7,7 +8,8 @@ function createWindow () {
     webPreferences: {
       nodeIntegration: true,
        enableRemoteModule: true
-    }
+    },
+    icon: path.join(__dirname, '/icons/notee.png')
   })
 
   win.loadFile('index.html')
