@@ -8,6 +8,5 @@ Halo this is notee, a minimalist desktop application to create a simple note.
 - full screen view
 
 ## Get The App
-- Open release menu of this repo here https://github.com/herdiansc/notee/releases
-- Find latest release
+- Open latest release page of this repo here https://github.com/herdiansc/notee/releases/latest
 - Download AppImage or build from source.
